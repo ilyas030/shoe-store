@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShoeStore — обувь для всех</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">👟 ShoeStore</div>
+    <nav>
+      <a href="#catalog">Каталог</a>
+      <a href="#about">О нас</a>
+    </nav>
+    <button id="cartBtn" class="cart-btn">
+      🛒 Корзина <span id="cartCount">0</span>
+    </button>
+  </header>
+
+  <section class="hero">
+    <h1>Обувь, в которой удобно жить</h1>
+    <p>Кроссовки, ботинки, туфли и сандалии — с доставкой по всей стране.</p>
+    <a href="#catalog" class="btn-primary">Смотреть каталог</a>
+  </section>
+
+  <section id="catalog" class="catalog">
+    <h2>Каталог</h2>
+    <div class="filters">
+      <button class="filter-btn active" data-category="all">Все</button>
+      <button class="filter-btn" data-category="sneakers">Кроссовки</button>
+      <button class="filter-btn" data-category="boots">Ботинки</button>
+      <button class="filter-btn" data-category="shoes">Туфли</button>
+      <button class="filter-btn" data-category="sandals">Сандалии</button>
+    </div>
+    <div id="productGrid" class="product-grid"></div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>О нас</h2>
+    <p>Мы — небольшой магазин обуви. Подбираем модели, в которых ногам
+       комфортно с первого шага. Работаем с 2020 года.</p>
+  </section>
+
+  <div id="cartModal" class="modal hidden">
+    <div class="modal-content">
+      <h2>Корзина</h2>
+      <ul id="cartItems"></ul>
+      <p class="cart-total">Итого: <strong id="cartTotal">0</strong> ₽</p>
+      <button id="checkoutBtn" class="btn-primary">Оформить заказ</button>
+      <button id="closeCart" class="btn-secondary">Закрыть</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>© <span id="year"></span> ShoeStore. Все права защищены.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
