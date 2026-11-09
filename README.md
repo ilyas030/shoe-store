@@ -1,6 +1,6 @@
 # 👟 ShoeStore — интернет-магазин обуви
 
-Учебный проект на HTML, CSS и JavaScript.
+Учебный проект на HTML, CSS и JavaScript
 
 **Автор:** Минибаев Ильяс
 
